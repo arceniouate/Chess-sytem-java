@@ -2,10 +2,11 @@ package aplication;
 
 import boardGame.Board;
 import boardGame.Position;
+import chess.ChessMach;
 
 public class Program {
     public static void main(String[] args) {
-        Board p=new Board(8,8);
-        System.out.println(p);
+        ChessMach chessMach=new ChessMach();
+        UI.printBoard(chessMach.getPieces());
     }
 }

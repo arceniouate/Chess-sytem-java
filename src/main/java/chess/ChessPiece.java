@@ -11,9 +11,13 @@ private Color color;
         this.color = color;
     }
 
+    /**
+     * queo so que a cor seja acessa não modificd
+     * @return cor
+     */
     public Color getColor() {
         return color;
     }
 
-    
+
 }
