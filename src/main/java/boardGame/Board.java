@@ -45,4 +45,15 @@ public class Board {
 
     }
 
+    /**
+     *  metodo responsavel por colacae o pedaco na posição do taboleiro
+     *  pegr na matriz e atribuir a posicao dada a peca
+     * @param piece
+     */
+    public  void PlacePiece( Piece piece ,Position position){
+        pieces[position.getRow()][position.getColumns()]=piece;
+        piece.position=position;
+
+    }
+
 }

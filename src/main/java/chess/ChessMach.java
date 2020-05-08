@@ -1,6 +1,8 @@
 package chess;
 
 import boardGame.Board;
+import boardGame.Position;
+import chessPieces.Rook;
 
 /***
  * nessa classe termos as regras do xadre
@@ -16,6 +18,7 @@ public class ChessMach {
      */
     public ChessMach() {
         board=new Board(8,8);
+        initialSetup();
     }
 
     /**
@@ -31,6 +34,10 @@ public class ChessMach {
 
             }
         return mat;
+
+    }
+    private  void initialSetup(){
+        board.PlacePiece(new Rook(board, Color.BLACK), new Position(2,1));
 
     }
 }
